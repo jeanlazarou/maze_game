@@ -1,0 +1,17 @@
+Maze game presents a fame where the player moves through a maze searching for the exit. The maze grids are randomly generated using theseus, a maze generator (from https://github.com/jamis/theseus.git).
+
+It currently displays a Text UI using Unix curses. As it only runs on Unix-like systems, I added a basic implementation of the curses library for jRuby using the Java/Swing GUI layer, so that it can run on all systems. The curses support is limited to make the game run and is not 'curses' compatible.
+
+The player can:
+ * save the current maze and replay it at a later time,
+ * load a demo maze (10 by 10), start the game with -d option,
+ * force the generation of a new maze at any moment,
+ * start the game with a timer
+ 
+To run the game you need to first install theseus, then with RMI 1.9.2:
+  $ ruby maze_game.rb
+  
+With jRuby:
+  $ jruby --1.9 -Ilib maze_game.rb
+  
+- Jean Lazarou
