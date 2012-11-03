@@ -13,5 +13,8 @@ To run the game you need to first install theseus, then with RMI 1.9.2:
   
 With jRuby:
   $ jruby --1.9 -Ilib maze_game.rb
-  
+ 
+Note:
+Unfortunately, both RMI 1.9.2 and 1.9.3 did not include 'curses' after installing them with rvm, I managed to make it work by copying the 'curses.so' from 1.9.1 to 'lib/ruby/1.9.1/i686-linux'.
+
 - Jean Lazarou
