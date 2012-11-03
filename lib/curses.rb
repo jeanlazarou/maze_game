@@ -155,7 +155,7 @@ class Cursor
     
     g.color = @state_on ? Color::WHITE : Color::BLACK
     
-    g.fill_rect column * @width + 1, line * @height + 4, @width - 2, @height - 2
+    g.fill_rect column * (@width - 1), line * @height + 5, @width - 1, @height - 4
   
   end
   
