@@ -53,10 +53,13 @@ Here is the usage message of the script:
         -?, --help                       Show this message
 
 
-## Note
+## Notes
 
-Unfortunately, both RMI 1.9.2 and 1.9.3 did not include 'curses' after 
+* Unfortunately, both MRI 1.9.2 and 1.9.3 did not include 'curses' after
 installing them with rvm, I managed to make it work by copying the 
-'curses.so' from 1.9.1 to 'lib/ruby/1.9.1/i686-linux'.
+`curses.so` file from 1.9.1 to `lib/ruby/1.9.1/i686-linux`.
+* As of Ruby 2.1 the curses library is not part of the standard library anymore, 
+and is available as a Ruby gem ([https://github.com/ruby/curses](https://github.com/ruby/curses)).
+* The _curses_ gem also works fine with the [Rubinius](http://rubini.us/) implementation of Ruby.
 
 \- Jean Lazarou
